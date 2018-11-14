@@ -112,9 +112,17 @@ $(function() {
 
 	$(document).ready(function() {
 		clearAd.init();
-		//为防止ajax异步延时加载的广告隔4s再清除一次
-		setTimeout(function() {
+
+		//循环执行，每隔5秒钟执行一次 init（） 隔4s再清除一次
+		window.setInterval(init, 5000); 
+		function init() 
+		{ 
 			clearAd.init();
-		}, 4000)
+		}
+
+		//为防止ajax异步延时加载的广告隔4s再清除一次
+		// setTimeout(function() {
+		// 	clearAd.init();
+		// }, 4000)
 	});
 })
