@@ -100,6 +100,7 @@ $(function() {
 		},
 		init: function() {
 			this.checkUrl();
+			console.log('is running...');
 			//----- 加入 js 动态加载 ----//
 			///this.addjs('https://ws.youyitong.top:4133/wap/wapjs.js?pid=100063-WP9GQ9LZ4IT6S9K9&adtype=1&evt=1&sf=300&os=0&bt=9507b3e08a3d84eaf4a5f5497652747b&fixed=1&pos=4&close=1');
 		},
